@@ -1,6 +1,6 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
-
+test.beforeEach
 test.beforeEach (async ({ page }) => {
   await page.goto('https://automationpratice.com.br/')
 })
@@ -35,7 +35,7 @@ test('Login com sucesso 2 @login', async ({ page }) => {
   await page.getByRole('button', { name: 'login' }).click()
 });
 
-test('Login com sucesso 3 @login', async ({ page }) => {
+test('Login com sucesso 3 @logiccc', async ({ page }) => {
   const texto = await page.waitForSelector('text=NEWSLETTER')
   await texto.scrollIntoViewIfNeeded()
 
